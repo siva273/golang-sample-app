@@ -11,6 +11,7 @@ RUN go get -d -v ./...
 
 # Install the package
 RUN go install -v ./...
+RUN pwd
 
 # This container exposes port 8080 to the outside world
 EXPOSE 8080
